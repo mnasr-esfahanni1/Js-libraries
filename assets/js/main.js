@@ -90,11 +90,8 @@ function setClass(element) {
 
 
 lightbox.option({
-
-
- 
   'resizeDuration': 200,
   'wrapAround': true,
-  'positionFromTop':400,
+  'positionFromTop':300,
   'fitImagesInViewport': true
 })
