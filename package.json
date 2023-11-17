@@ -1,0 +1,22 @@
+{
+  "name": "ass3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Mina Nasr Esfahani",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "gul": "^1.0.0",
+    "gulp": "^4.0.2",
+    "lightbox2": "^2.11.4",
+    "masonry-layout": "^4.2.2"
+  }
+}

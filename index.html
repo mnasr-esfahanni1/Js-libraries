@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- css Reset -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css"/>
+		<!-- External css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+		<!-- Externa lightbox css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/lightbox.css"/>
+
+		<!-- Externa gilde css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/glide.theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/glide.core.min.css"/>
+		
+		<!-- Extrenal Aos library -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+
+		<!-- gsap Library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+		<script src="assets/js/main.js" defer></script>
+		
+
+		<title>Restaurant</title>
+	</head>
+	<body>
+		
+		<!-- header -->
+		<header id="heroImage">
+		<!-- Navigation -->
+			<nav class="nav">
+				<a href="#" id="home" class="nav_Item"></a>
+				<a href="#" id="menu" class="nav_Item"></a>
+				<a href="#" id="aboutUs" class="nav_Item"></a>
+				<a href="#" id="FindUs" class="nav_Item"></a>
+				<a href="#" id="Events" class="nav_Item"></a>
+			</nav>
+		</header>
+
+		
+		
+		<!-- Main -->
+		<main>
+		<!-- hero slide show -->
+			<section id="slideshow">
+				<div class="glide">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide" id="img1"></li>
+							<li class="glide__slide" id="img2"></li>
+							<li class="glide__slide" id="img3"></li>
+							<li class="glide__slide" id="img4"></li>
+							<li class="glide__slide" id="img5"></li>
+							<li class="glide__slide" id="img6"></li>
+						</ul>
+					</div>
+					<div class="glide__arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="cards">
+				<!-- image for about us -->
+				<div class="card" data-aos="fade-right"  data-aos-duration="1000"  id="AboutImg">
+			
+				</div>
+				<div class="card Txt" data-aos="fade-left"  data-aos-duration="1000">
+					<h1>ABOUT</h1>
+					<h2>our restaurant</h2>
+					<h3>HOURS</h3>
+					<h4>Monday &nbsp - &nbsp 12pm-9pm</h4>
+					<h4>Tuesday &nbsp- &nbsp 12pm-10pm</h4>
+					<h4>Wednesday &nbsp- &nbsp 12pm-10pm</h4>
+					<h4>Thursday &nbsp- &nbsp 12pm-10pm</h4>
+					<h4>Friday &nbsp- &nbsp 12pm-10pm</h4>
+					<h4>Saturday &nbsp- &nbsp 12pm-10pm</h4>
+					<h4>Sunday &nbsp- &nbsp 12pm-10pm</h4>
+					<h3>PHONE</h3>
+					<h4>123-246-7890</h4>
+					<h4>123-246-7890</h4>
+					<button>ABOUT US</button>
+				</div>
+
+
+
+				<div class="card Txt" data-aos="fade-right"  data-aos-duration="1000"  >
+					<h1>ORDER</h1>
+					<h2>pick-up & delivery</h2>
+					<h5>CONTACTLESS TAKE-OUT</h5>
+					<h4>To place an order for pickup,</h4>
+					<h4>please order via Square.</h4>
+					<button>ORDER PICUP</button>
+					<h5>DELIVERY EXPANDED</h5>
+					<h4>To place an order for delivery, please choose from </h4>
+					<h4>one of our partners below:</h4>
+					<h4><a href="https://www.ubereats.com/ca">Uber Eats</a>, &nbsp<a href="https://www.ubereats.com/ca">SkipTheDishes</a>, &nbsp<a href="https://www.ubereats.com/ca">DoorDash</a> </h4>
+				</div>
+				<!-- image for order -->
+				<div class="card" data-aos="fade-left"  data-aos-duration="1000" id="orderImg" >
+					
+				</div>
+			</section>
+
+			 
+			<!-- using light box for resizing images -->
+			<figure id="pictures"> 
+				<a href="assets/images/desser5.jpeg" data-lightbox="image-1" data-title="dessert"  data-lightbox="roadtrip"><div id="imgBig-1" class="imaheShow"></div></a>
+				<a href="assets/images/dessert1.jpeg" data-lightbox="image-1" data-title="dessert"  data-lightbox="roadtrip"><div id="imgBig-2" class="imaheShow"></div></a>
+				<a href="assets/images/dessert2.jpeg" data-lightbox="image-1" data-title="dessert"  data-lightbox="roadtrip"><div id="imgBig-3" class="imaheShow"></div></a>
+				<a href="assets/images/dessert3.jpeg" data-lightbox="image-1" data-title="dessert"  data-lightbox="roadtrip"><div id="imgBig-4" class="imaheShow"></div></a>
+				<a href="assets/images/dessert4.jpeg" data-lightbox="image-1" data-title="dessert"  data-lightbox="roadtrip"><div id="imgBig-5" class="imaheShow"></div></a>
+				<a href="assets/images/main1.jpeg" data-lightbox="image-1" data-title="main course"  data-lightbox="roadtrip"><div id="imgBig-6" class="imaheShow"></div></a>
+
+			</figure>
+
+		</main>
+
+		<!-- footer using Granim js -->
+		<footer>
+			<!-- using Granim js -->
+			<section class="canvas-interactive-wrapper">
+				<canvas id="canvas-interactive"></canvas>
+				<div class="cta-wrapper">
+					<h1 id="contact">Connect With Us </h1>
+					<figure>
+						<a  id="facebook" ></a>
+						<a  id="instagarm"></a>
+						<a  id="twitter"></a>
+					</figure>
+				</div>
+			</section>
+		</footer>
+
+
+		
+		<!-- lightbox js -->
+		<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+		<!-- gilde js -->
+		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+		<!-- aos js -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- granim js -->
+		<script src="assets/js/granim.min.js"></script>
+		
+	</body>
+</html>

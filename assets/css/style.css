@@ -1,0 +1,410 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    height:32vh ;
+    background-image: url(../images/newBack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    
+}
+/* navigation */
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 55vh;
+    margin-top: 1vh;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 20px;
+    width: 100%;
+
+}
+
+.nav_Item{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#home{
+    background-image: url(../images/home.png);
+}
+#menu{
+    background-image: url(../images/menu.png);
+}
+#aboutUs{
+    background-image: url(../images/AboutUs.png);
+    background-position: top;
+}
+#FindUs{
+    background-image: url(../images/FindUs.png);
+}
+#Events{
+    background-image: url(../images/Events.png);
+
+}
+#section1 .fp-bg{
+    background-image: url('imgs/alvaro-genious.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+
+
+
+/* main  */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* slideshow */
+#slideshow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 20vh;
+    /* margin: 5% 2%; */
+    margin-top: 1.2%;
+    background-color: black;
+    margin-top: 5vh;
+    
+    
+}
+
+#img1{
+    background-image: url(../images/burger.jpg);
+}
+#img2{
+    background-image: url(../images/Pizza.jpg);
+}
+#img3{
+    background-image: url(../images/spaghetti.jpg);
+}
+#img4{
+    background-image: url(../images/taco.jpg);
+}
+#img5{
+    background-image: url(../images/twoburgers.jpg);
+}
+#img6{
+    background-image: url(../images/Fish.jpg);
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5vh;
+    flex-direction: column;
+
+}
+.card{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* about text and Image */
+/* image */
+#AboutImg{
+    background-image: url(../images/about.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+/* text */
+.Txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    --scrollbar-width: 0px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+h2{
+    text-align: center;
+    height: 5vh;
+    width: 50vw;
+    color: rgb(98, 1, 19);
+    font-size: 20px;
+    border-bottom: 2px solid rgb(98, 1, 19);
+    margin-top: 20px;
+}
+h3{
+    font-size: 28px; 
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: firebrick;
+}
+h4{
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight:50;
+}
+h5{
+    font-size: 24px;
+    margin: 40px 0;
+}
+.Txt button{
+    background-color:  firebrick;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 45vw;
+    height: 5vh;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* order text and image */
+#orderImg{
+    background-image: url(../images/order.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* lightbox image showing */
+
+#pictures{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh 0;
+    flex-wrap: wrap;
+    
+}
+
+/* ading image to boxes */
+#imgBig-1{
+    background-image: url(../images/desser5.jpeg);
+}
+#imgBig-2{
+    background-image: url(../images/dessert1.jpeg);
+}
+#imgBig-3{
+    background-image: url(../images/dessert2.jpeg);
+}
+#imgBig-4{
+    background-image: url(../images/dessert3.jpeg);
+}
+#imgBig-5{
+    background-image: url(../images/dessert4.jpeg);
+}
+#imgBig-6{
+    background-image: url(../images/main1.jpeg);
+}
+.imaheShow{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;   
+    margin-bottom: 10px; 
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canvas-interactive-wrapper {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    width:100%;
+}
+
+.canvas-interactive-wrapper canvas {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.canvas-interactive-wrapper .cta-wrapper {
+    margin-top: 5vh;
+}
+
+.canvas-interactive-wrapper .cta-wrapper a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 7px;
+    border: solid 1px transparent;
+    margin-right: 50px;
+    z-index: 1;
+    text-decoration: none;
+    color: #222;
+    transition: border .3s;
+}
+.canvas-interactive-wrapper .cta-wrapper h1 {
+    position: relative;
+    display: inline-block;
+    padding: 3px 7px;
+    border: solid 1px transparent;
+    margin: 50px;
+    margin-left: 0;
+    z-index: 1;
+    text-decoration: none;
+    color: #6b0101;
+    transition: border .3s;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.canvas-interactive-wrapper .cta-wrapper a.active {
+    border-color: #222;
+}
+#contact{
+    font-size: 28px;
+}
+/* social image icon */
+#facebook{
+    background-image: url(../images/facebook.png);
+    width: 50px;
+    height:50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#instagarm{
+    background-image: url(../images/insta.png);
+    width: 50px;
+    height:50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#twitter{
+    background-image: url(../images/twitter.png);
+    width: 50px;
+    height:50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+/* responsive for larger screen */
+@media only screen and (min-width:650px) {
+    
+    /* header */
+    header{
+    
+        align-items: flex-start;
+        justify-content: flex-start ;
+        height:70vh ;
+        background-image: url(../images/hero.jpg);
+        background-size: contain;
+        background-position: 30%;
+    }
+   
+    .cards{
+        flex-direction: row;
+    }
+    .card{
+        width: 50%;
+
+    }
+    /* about image */
+    #AboutImg{
+        background-image: url(../images/about.jpeg);
+        background-position: right;
+        background-size: cover;
+    }
+    /* text styling for cards */
+    #contact , h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+        width: 20vw;
+    }
+    h3{
+        font-size: 28px; 
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 24px;
+    }
+    .Txt button{
+        font-size: 16px;
+        border-radius: 10px;
+        width: 8vw;
+        height: 3vh;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #orderImg{
+        background-image: url(../images/order.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* navigation */
+    nav{
+        display: flex;
+        flex-direction: column;
+    height: 100%;
+        margin-top: 0;
+
+    }
+    .nav_Item{
+        width: 60px;
+        height: 60px;
+        
+
+    }
+        
+}
